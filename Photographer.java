@@ -4,6 +4,7 @@ public class Photographer{
 
   private String name;
   private ArrayList<Camera> camera_collection;
+  private HashMap<String, Integer> journal = new HashMap<String, Integer>();
 
   public Photographer(String name){
     this.name = name;
