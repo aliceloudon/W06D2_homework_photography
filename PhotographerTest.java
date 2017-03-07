@@ -37,30 +37,12 @@ public class PhotographerTest {
     assertEquals(0, photographer.cameraCount());
   }
 
-  // @Test
-  // public void canRemoveCamera(){
-  //   photographer.addCamera(digital_camera);
-  //   Camera equipment = photographer.removeCamera();
-  //   DigitalCamera original = (DigitalCamera) equipment;
-  //   assertEquals("shutter speed: 60, zoom: 8X, ratio: 6:5", original.getCameraDetails());
-  // }
-
-
-  // @Test
-  // public void canGetCameraDetails(){
-  //   photographer.addCamera(digital_camera);
-  //   Camera equipment = photographer.
-  //   assertEquals("shutter speed: 60, zoom: 8X, ratio: 6:5", photographer.getCameraDetails());
-  // }
-
-
-
-  // @Test
-  // public void canThrowUpChicken() {
-  //   bear.eat(chicken);
-  //   Edible food = bear.throwUp();
-  //   Chicken original = (Chicken) food;
-  //   assertEquals("Cluck!", original.cluck() );
-  // }
+  @Test
+  public void canGetCameraDetails(){
+    photographer.addCamera(digital_camera);
+    Camera equipment = photographer.getCameraDetails();
+    DigitalCamera original = (DigitalCamera) equipment;
+    assertEquals("shutter speed: 60, zoom: 8X, ratio: 6:5", original.printDetails());
+  }
 
 }

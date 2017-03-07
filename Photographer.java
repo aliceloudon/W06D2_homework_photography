@@ -26,23 +26,11 @@ public class Photographer{
     camera_collection.remove(camera);
   }
 
-  // public void getCamera(Camera camera){
-  //   if (cameraCount() > 0) {
-  //     return camera_collection.remove();
-  //   }
-  //   return null;
-  // }
-
-  // public String getCameraDetails(Camera camera){
-  //   camera_collection.printDetails(camera);
-  // }
+  public Camera getCameraDetails(){
+    if (cameraCount() > 0) {
+      return camera_collection.remove(cameraCount() -1);
+    }
+    return null;
+  }
 
 }
-
-// public int totalNutrition() { 
-//   int count = 0;
-//     for (Edible food : belly) {
-//       count = count + food.nutritionValue();
-//     } 
-//     return count;
-// }
